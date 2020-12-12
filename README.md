@@ -1,1 +1,3 @@
-# aleksanderlamkov-worldskillshttps://github.com/Blackwh1te/aleksanderlamkov-worldskills
+# aleksanderlamkov-worldskill
+
+https://blackwh1te.github.io/aleksanderlamkov-worldskills/
