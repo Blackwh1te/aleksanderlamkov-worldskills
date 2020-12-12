@@ -10,7 +10,7 @@
              0:{
                  items:1
              },
-             414:{
+             576:{
                  items:2,
                  margin: 20
              },
@@ -24,14 +24,37 @@
          loop: true,
          margin: 30,
          nav: true,
-         items: 2
+         items: 2,
+         responsive:{
+             0:{
+                 items:1
+             },
+             576:{
+                 items:2
+             }
+         }
       })
 
       $('.beforeafter .owl-carousel').owlCarousel({
          loop: true,
          margin: 30,
          nav: true,
-         items: 4
+         items: 4,
+         responsive:{
+             0:{
+                 items:1
+             },
+             576:{
+                 items:2,
+                 margin: 20
+             },
+             768:{
+                 items:3,
+             },
+             992:{
+                 items:4
+             }
+         }
       })
 
             

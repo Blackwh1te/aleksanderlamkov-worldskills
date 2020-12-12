@@ -960,8 +960,13 @@ input[type="submit"] {
       }
    }
 
-   .beforeafter .item {
-      height: 100px;
+   .beforeafter {
+      .item {
+         // height: 100px;
+      }
+      img {
+         // max-width: 120px;
+      }
    }
 
    .brands__list {
@@ -974,6 +979,11 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 576px) {
+   .owl-nav button {
+      width: 40px;
+      height: 40px;
+   }
+   
    .header {
       &__top {
          flex-direction: column;
@@ -1013,6 +1023,10 @@ input[type="submit"] {
    .fixes__item-wrapper  {
       flex: 100%;
       max-width: 100%;
+   }
+
+   .map iframe {
+      height: 300px;
    }
 }
 
