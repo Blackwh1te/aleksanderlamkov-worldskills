@@ -42,5 +42,18 @@
          $('body, html').animate({scrollTop: top - 50}, 800);
       });
 
+      function autoHeight(el) {
+         let maxHeight = 0; 
+         el.each(function(){
+           if ($(this).height() > maxHeight) {
+             maxHeight = $(this).height();
+           }
+         }); 
+         el.height(maxHeight);
+       }
+   
+       autoHeight($(".owl-item"));
+   
+
    });
 })(jQuery);

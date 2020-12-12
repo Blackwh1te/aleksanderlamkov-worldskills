@@ -878,9 +878,44 @@ input[type="submit"] {
          padding: 10px;
       }
    }
+
+   .about {
+      .container {
+         background: transparent;
+      }
+
+      &__title {
+         text-align: center;
+      }
+
+      &__body {
+         padding: 60px 0px;
+         // max-width: 100%;
+         margin: 0 auto;
+      }
+   }
+
+   section {
+      margin: 0px 0px 20px 0px;
+      padding: 20px 0;
+   }
+   
+
+   h2 {
+      margin: 0px 0px 10px 0px !important;
+   }
+
+   .price__difficulty:before {
+      width: 15px;
+      height: 15px;
+   }
 }
 
 @media screen and (max-width: 768px) {
+   h2 {
+      font-size: 36px;
+   }
+
    .logo {
       img {
          width: 180px;
@@ -900,6 +935,13 @@ input[type="submit"] {
    .policy-link {
       max-width: 200px;
       text-align: right;
+   }
+
+   .fixes__image {
+      max-width: 60px;
+   }
+   .beforeafter .item {
+      height: 100px;
    }
 }
 
