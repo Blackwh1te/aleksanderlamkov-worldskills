@@ -599,6 +599,14 @@ section {
   width: 100%;
 }
 
+.map iframe {
+  pointer-events: none;
+}
+
+.map iframe.active {
+  pointer-events: auto;
+}
+
 .banner {
   background: #FFFFFF;
 }
@@ -1067,8 +1075,24 @@ input[type="submit"] {
   .fixes__image {
     max-width: 60px;
   }
+  .fixes__list {
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  .fixes__item-wrapper {
+    flex: calc(50% + -40px);
+    max-width: 50%;
+    padding: 0 10px;
+    margin: 0px 0px 20px 0px;
+  }
   .beforeafter .item {
     height: 100px;
+  }
+  .brands__list {
+    justify-content: center;
+  }
+  .about__body {
+    padding: 10px 0;
   }
 }
 
@@ -1097,6 +1121,10 @@ input[type="submit"] {
   }
   .footer .menu__list {
     justify-content: space-between;
+  }
+  .fixes__item-wrapper {
+    flex: 100%;
+    max-width: 100%;
   }
 }
 

@@ -1,11 +1,23 @@
 (function ($) {
    $(document).ready(function() {
-	 
+      
       $('.price .owl-carousel').owlCarousel({
          loop: true,
          margin: 30,
          nav: true,
-         items: 3
+         items: 3,
+         responsive:{
+             0:{
+                 items:1
+             },
+             414:{
+                 items:2,
+                 margin: 20
+             },
+             768:{
+                 items:3
+             }
+         }
       })
 
       $('.reviews .owl-carousel').owlCarousel({
@@ -52,7 +64,13 @@
          el.height(maxHeight);
        }
    
-       autoHeight($(".owl-item"));
+      //  autoHeight($(".owl-item"));
+   
+      $('.map').click(function() {
+         $(this).find('iframe').addClass('active');
+       }).mouseleave(function() {
+         $(this).find('iframe').removeClass('active');
+       });
    
 
    });

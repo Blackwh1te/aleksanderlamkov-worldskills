@@ -307,9 +307,6 @@ section {
    }
 }
 
-.container {
-}
-
 .contacts {
    // .contacts__list
    &__list {
@@ -348,6 +345,14 @@ section {
    }
    // .contacts__title
    &__title {
+   }
+}
+
+.map iframe {
+   pointer-events: none;
+
+   &.active {
+      pointer-events: auto;
    }
 }
 
@@ -937,11 +942,34 @@ input[type="submit"] {
       text-align: right;
    }
 
-   .fixes__image {
-      max-width: 60px;
+   .fixes {
+      &__image {
+         max-width: 60px;
+      }
+
+      &__list {
+         flex-wrap: wrap;
+         margin: 0 -10px;
+      }
+
+      &__item-wrapper {
+         flex: calc(50% + -40px);
+         max-width: 50%;
+         padding: 0 10px;
+         margin: 0px 0px 20px 0px;
+      }
    }
+
    .beforeafter .item {
       height: 100px;
+   }
+
+   .brands__list {
+      justify-content: center;
+   }
+
+   .about__body {
+      padding: 10px 0;
    }
 }
 
@@ -980,6 +1008,11 @@ input[type="submit"] {
             justify-content: space-between;
          }
       }
+   }
+
+   .fixes__item-wrapper  {
+      flex: 100%;
+      max-width: 100%;
    }
 }
 
